@@ -42,7 +42,7 @@ router.route('/activities')
         const username = request.session.username;
         const userid = request.session._userid;
         const description = request.body.description;
-        const time = moment().format("L");
+        const time = Date.now();
 
 
 
@@ -99,7 +99,7 @@ router.route('/activities/:id')
         const id = request.params.id;
         const username = request.session.username;
         const description = request.body.description;
-        const date = moment().format("L");
+        const date = Date.now();
 
         Activity.findOneAndUpdate(
             { _id: id },
