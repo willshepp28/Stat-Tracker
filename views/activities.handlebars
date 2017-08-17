@@ -1,0 +1,28 @@
+<h1>Activites</h1>
+
+
+<div class="container">
+
+    {{#if activity}}
+    <div class="activities">
+        {{#each activity}}
+            <h2>{{name}}</h2>
+            <h3>{{description}}</h3>
+            <p>Date Created: {{date}}</p>
+            <a href="/api/activities/{{id}}"><p>click here to check this activity out</p></a>
+        {{/each}}
+        {{else}}
+        <h3>Create a new task</h3>
+
+        <form action="/api/activities" method="post">
+           <lable for="username">Name</lable><br>
+           <input type="text" name="name" placeholder="Enter a new activity"><br><br>
+           <lable for="username">Description</lable><br>
+           <input type="text" name="description" placeholder="Describe this activity"><br><br>
+
+         <button type="submit">Submit</button>
+        </form>
+        {{/if}}
+    </div>
+
+</div>

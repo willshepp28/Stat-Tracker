@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+
+html, body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+ 
+
+
+}
+
+.redtext { color: red; }
+
+
+.activities { border-bottom: 2px solid black; margin-top: 20px; margin-bottom: 20px; width: 50%;}
+
+.form-container {border: 1px solid #F8F8F8; margin-bottom: 50px; width: 25%; background: #F8F8F8; border-radius: 3px;}
