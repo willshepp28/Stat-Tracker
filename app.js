@@ -37,13 +37,13 @@ application.use(session({
 }));
 
 
-// application.use(function(request,response, next){
+application.use(function(request,response, next){
 
-//   if (!request.session.isAuthenticated){
-//       request.session.isAuthenticated = false;
-//   }
-//   next();
-// });
+  if (!request.session.isAuthenticated){
+      request.session.isAuthenticated = false;
+  }
+  next();
+});
 
 
 
